@@ -1,11 +1,10 @@
-function PrmBtn(props){
-    
+function PrmBtn({btnText,bgColor,width}){
         return <button 
-        className={`px-6 py-2 w-fit rounded-full font-medium cursor-pointer 
+        className={`px-6 py-2 ${width==="full"? "w-full" :"w-fit"} rounded-full font-medium cursor-pointer 
             ${
-                props.bgColor==="orange"?"bg-orange-400 text-black hover:bg-orange-500":"bg-blue-600 text-white hover:bg-blue-700"
+                bgColor==="orange"?"bg-orange-400 text-black hover:bg-orange-500":"bg-blue-600 text-white hover:bg-blue-700"
             } 
-            `}>{props.btnText}</button>
+            `}>{btnText}</button>
 }
 
 export default PrmBtn

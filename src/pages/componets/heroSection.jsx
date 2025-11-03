@@ -3,7 +3,7 @@ import PrmBtn from './navbarCom/prmBtn'
 function HeroSection(){
     return(
         
-        <section id='heroContainer' className="flex flex-col items-center w-full">
+        <section id='heroContainer' className="flex flex-col items-center w-full mt-16 ">
             
             <div id="background" className="relative flex flex-col items-center  w-full bg-[url('/Guard/Header%20Ambient%20Background.svg')] object-cover top-0 left-0">
                 {/* Headline */}

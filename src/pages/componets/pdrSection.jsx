@@ -61,7 +61,7 @@ const PdrSection = ()=>{
         {
             sectionData.map((Data,indx)=>{
                 if(indx===selectedbtn){
-                    return <div id="pdrbottomContainer" className='flex flex-col md:flex-row lg:p-16 w-fit my-2'>
+                    return <div key={indx} id="pdrbottomContainer" className='flex flex-col md:flex-row lg:p-16 w-fit my-2'>
                             <div id="leftSide" className='flex-1/3 flex flex-col justify-center gap-5'>
                                 <h2 className="font-bold text-4xl max-sm:text-2xl max-sm:font-extrabold">{Data.h2Text}</h2>
                                 <p>{Data.pText}</p>
